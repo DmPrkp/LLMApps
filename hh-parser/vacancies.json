@@ -1,0 +1,810 @@
+[
+  [
+    {
+      "title": "Senior Backend Engineer / Старший бэкэнд разработчик",
+      "company": "Podscribe",
+      "salary_from": 7000,
+      "salary_to": 12000,
+      "currency": "USD",
+      "description": "Существенное влияние на <highlighttext>разработку</highlighttext> новых продуктов и реальная ответственность. 7+ лет опыта в backend- или data-<highlighttext>инженерии</highlighttext>.  Opportunities to work on cutting-edge technologies and implement innovative solutions. Significant ownership and impact on new product <highlighttext>development</highlighttext>.",
+      "skills": [],
+      "id": "130621779"
+    },
+    {
+      "title": "Senior .NET Developer (Matching Engine / Crypto Processing)",
+      "company": "Heaad",
+      "salary_from": 8000,
+      "salary_to": null,
+      "currency": "USD",
+      "description": "Опыт: от 5–7 лет в бэкенд-<highlighttext>разработке</highlighttext>. Знания: Глубокое понимание алгоритмов сопоставления, микроструктуры рынка, моделей памяти и конкурентного программирования.  Проектирование высокопроизводительных книг заявок в памяти (FIFO, бинарные деревья, lock-free структуры). Создание детерминированных алгоритмов сопоставления (Limit, Market, IOC/FOK...",
+      "skills": [],
+      "id": "130714095"
+    },
+    {
+      "title": ".Net разработчик (криптобиржи)",
+      "company": "Heaad",
+      "salary_from": 7000,
+      "salary_to": null,
+      "currency": "USD",
+      "description": "Nice to Have.  Experience building matching <highlighttext>engines</highlighttext>, FIX <highlighttext>engines</highlighttext>, or market data gateways.  Knowledge of NUMA optimization, kernel bypass, RDMA... determinism,” and “predictability” aren’t buzzwords but measurable <highlighttext>engineering</highlighttext> constraints. To millions of events per second, with strict correctness and...",
+      "skills": [],
+      "id": "130707906"
+    },
+    {
+      "title": "Старший С++ разработчик (Лимасcол, Кипр)",
+      "company": "MetaQuotes Software Corp.",
+      "salary_from": 5500,
+      "salary_to": 7000,
+      "currency": "EUR",
+      "description": "Опыт оптимизации программного кода. Навыки работы в команде <highlighttext>разработчиков</highlighttext> и взаимодействия с другими отделами. IPC и multiprocessing. TCP asynchronious sockets.  Интеграция с биржевыми и банковскими платформами. Распределённая система интеграции брокеров.",
+      "skills": [],
+      "id": "124171420"
+    },
+    {
+      "title": "Team Lead Go (Golang, продукты для управления инфраструктурой и PKI (TLS/ГОСТ)",
+      "company": "Клируэй Текнолоджис",
+      "salary_from": 450000,
+      "salary_to": 600000,
+      "currency": "RUR",
+      "description": "Сильные коммуникации: уметь объяснять решения команде и бизнес-стороне, держать фокус на результате. Опыт управления командой <highlighttext>разработки</highlighttext>: постановка целей, развитие... Вести людей и команду: регулярные 1:1, развитие, обратная связь, рост инженерной планки. Планировать delivery вместе с продуктом/аналитикой: приоритеты...",
+      "skills": [],
+      "id": "130631877"
+    },
+    {
+      "title": "Product-Oriented Full-Stack Engineer (AI Agents Platform)",
+      "company": "Консоль.Про",
+      "salary_from": 500000,
+      "salary_to": null,
+      "currency": "RUR",
+      "description": "Ежедневная практика работы с ИИ-ассистентами в <highlighttext>разработке</highlighttext>, умение: Формулировать запросы и добиваться полезного результата. Валидировать вывод, избегать «галлюцинаций».  Разрабатываем инновационную платформу для создания AI-агентов, автоматизирующих бизнес-процессы (поддержка, продажи, бэк-офис). Полный цикл <highlighttext>разработки</highlighttext>: проектирование архитектуры и...",
+      "skills": [],
+      "id": "130599420"
+    }
+  ],
+  [
+    {
+      "title": "Senior Rust Developer",
+      "company": "VELES.FINANCE",
+      "salary_from": 5000,
+      "salary_to": 8000,
+      "currency": "USD",
+      "description": "...опыта <highlighttext>разработки</highlighttext> на Rust / C++. Опыт работы с PostgreSQL, Clickhouse, Redis, Kafka. Понимание основных алгоритмов и структур данных. Опыт <highlighttext>разработки</highlighttext>... <highlighttext>Разработка</highlighttext> высоконагруженных систем для автоматизированной торговли на криптовалютных биржах. Участие в проектировании архитектуры и реализации новых функциональных возможностей. ",
+      "skills": [
+        "C++",
+        "Rust",
+        "SQL"
+      ],
+      "id": "130176555"
+    },
+    {
+      "title": "Senior Data AI Engineer",
+      "company": "Simplenight",
+      "salary_from": 5000,
+      "salary_to": 8000,
+      "currency": "USD",
+      "description": "Опыт работы с API сторонних <highlighttext>разработчиков</highlighttext> обязателен. Конвейерная обработка данных: опыт работы с SQL, ETL, моделированием данных. Опыт работы с... ",
+      "skills": [
+        "SQL"
+      ],
+      "id": "130856505"
+    },
+    {
+      "title": "Senior backend developer (Node.js)",
+      "company": "DataLouna",
+      "salary_from": 5000,
+      "salary_to": 7500,
+      "currency": "USD",
+      "description": "Логика и критическое мышление. Важнее знания конкретных технологий. Парсинг. Сложные парсеры, обход защит, нестабильные источники. PostgreSQL. Проектирование схем, оптимизация, EXPLAIN... Парсер букмекера где нет API: придумать как доставать, мапить, хранить стабильно. База для миллионов событий с быстрой выборкой по куче...",
+      "skills": [
+        "SQL",
+        "AI"
+      ],
+      "id": "130647864"
+    },
+    {
+      "title": "Senior/Lead Backend Developer",
+      "company": "NM Technologies HK Limited",
+      "salary_from": 5000,
+      "salary_to": null,
+      "currency": "USD",
+      "description": "Уверенного профессионала с опытом КОММЕРЧЕСКОЙ (не фриланс) <highlighttext>разработки</highlighttext> от 10 лет с Java, Spring, Hibernate. Инициативного человека, использующего проактивный подход... Развивать имеющиеся приложения (web и серверные), написанные на Java/Kotlin и разрабатывать абсолютно новые решения. Проектировать схемы баз данных, новые...",
+      "skills": [
+        "Java",
+        "Spring"
+      ],
+      "id": "130594469"
+    },
+    {
+      "title": "Senior Java Developer (JavaSE, algorithms, optimization)",
+      "company": "BrainShells",
+      "salary_from": 5000,
+      "salary_to": null,
+      "currency": "USD",
+      "description": "Java SE от 5 лет. Фреймворки не нужны. Нужны структуры данных, многопоточность, алгоритмы. Умение программировать: быстро разбираться в уже написанном... ...данные для обучения предиктивных моделей. Разрабатывать алгоритмы искусственного интеллекта. Читать научные статьи и применять идеи, предложенные там в <highlighttext>разработке</highlighttext> АИ.",
+      "skills": [
+        "Java"
+      ],
+      "id": "130610791"
+    },
+    {
+      "title": "Senior Java Developer (Kotlin)",
+      "company": "Demis Group",
+      "salary_from": 400000,
+      "salary_to": null,
+      "currency": "RUR",
+      "description": "Что нужно знать и уметь:). Отличные знания Java 11+. Знания Spring / Spring Boot / Spring Cloud. Теплые отношения с DevOps... ",
+      "skills": [
+        "Java",
+        "Spring"
+      ],
+      "id": "130536415"
+    },
+    {
+      "title": "Senior Java Engineer",
+      "company": "DatsTeam",
+      "salary_from": 400000,
+      "salary_to": null,
+      "currency": "RUR",
+      "description": "Умеете проектировать системы с прицелом на безопасность (особенно важно для финтеха). Опыт <highlighttext>разработки</highlighttext> финтех-решений или платёжных систем.  Проектирование архитектуры и <highlighttext>разработка</highlighttext> новых сервисов финтех-платформы с нуля. Реализация сложной бизнес-логики: управление состояниями (стейт-машины), обеспечение транзакционности...",
+      "skills": [],
+      "id": "130699991"
+    },
+    {
+      "title": "Разработчик C++ / Senior Security Engineer",
+      "company": "И-ком Солюшнс",
+      "salary_from": 400000,
+      "salary_to": null,
+      "currency": "RUR",
+      "description": "Глубокое понимание сетевых стеков Windows (WFP, NDIS, TDI). Опыт <highlighttext>разработки</highlighttext> kernel-mode драйверов для Windows. Практический опыт с API hooking... <highlighttext>Разработка</highlighttext> системы перехвата и анализа сетевого трафика под Windows. Реализация механизмов перехвата локальных соединений (Shared Memory, Named Pipes). ",
+      "skills": [],
+      "id": "130439564"
+    }
+  ],
+  [
+    {
+      "title": "Backend-разработчик",
+      "company": "Алабуга, ОЭЗ ППТ",
+      "salary_from": 375000,
+      "salary_to": null,
+      "currency": "RUR",
+      "description": "Опыт от 3-х лет коммерческой <highlighttext>разработки</highlighttext>. Глубокие знания Python, включая асинхронное программирование (asyncio, aiohttp). Глубокое понимание и опыт применения... <highlighttext>Разработка</highlighttext> нового функционала. <highlighttext>Разработка</highlighttext> проектов с нуля. Проведение Code Review. Подбор технологий для новых проектов. Улучшение существующей кодовой базы. ",
+      "skills": [
+        "Python",
+        "AI"
+      ],
+      "id": "130471583"
+    },
+    {
+      "title": "Backend-разработчик (Middle+/Senior)",
+      "company": "ДЖЕЙКЕТ РАБОТА",
+      "salary_from": 350000,
+      "salary_to": 500000,
+      "currency": "RUR",
+      "description": "Python (FastAPI, Telethon/Playwright/Selenium) для парсеров и сервисов. Node js/TypeScript с NestJS для основного бэкенда. Работа с базами... Не менее 3 лет в backend-<highlighttext>разработке</highlighttext> (Python/Node js). Проекты с парсингом и аналитикой данных в production. ",
+      "skills": [
+        "Python",
+        "TypeScript"
+      ],
+      "id": "130963112"
+    },
+    {
+      "title": "Java-разработчик",
+      "company": "Герасимчук Максим Юрьевич",
+      "salary_from": 350000,
+      "salary_to": 470000,
+      "currency": "RUR",
+      "description": "Опыт коммерческой <highlighttext>разработки</highlighttext> на Java от 3 лет. Глубокое понимание принципов ООП, многопоточности и работы с памятью. Навыки проектирования архитектуры... Проектировать и разрабатывать масштабируемые backend-сервисы на Java/Kotlin. Создавать архитектурные компоненты для высоконагруженных систем. Интегрировать решения с операционными системами...",
+      "skills": [
+        "Java"
+      ],
+      "id": "130375741"
+    },
+    {
+      "title": "Backend Developer (Node.js / NestJS) (Middle+/Senior)",
+      "company": "Таранов Антон Юрьевич",
+      "salary_from": 4500,
+      "salary_to": 6000,
+      "currency": "USD",
+      "description": "Уверенный, глубокий Node.js + TypeScript (DI в nest.js, middleware/guards, interceptors, OLTP/OLAP). Практика с NestJS и/или Express.  Real-time pipeline Pub/Sub → BigQuery, метрики (EPM/ROI) и автооптимизация. Можно влиять на архитектуру и правила игры, а не...",
+      "skills": [
+        "TypeScript",
+        "Node.js"
+      ],
+      "id": "130873992"
+    },
+    {
+      "title": "SCALA разработчик",
+      "company": "Клиника АльтраВита (ООО ЭкоЦентр)",
+      "salary_from": 350000,
+      "salary_to": null,
+      "currency": "RUR",
+      "description": "Опыт <highlighttext>разработки</highlighttext> на SCALA от 6 лет; ( Обязательно). - Опыт работы с распределенными системами и микросервисной архитектурой. - Знание баз данных, умение... <highlighttext>Разработка</highlighttext> и поддержка нового функционала в рамках платформы. Интеграция с другими сервисами и системами компании. Оптимизация производительности и масштабируемости кода. ",
+      "skills": [],
+      "id": "128876213"
+    },
+    {
+      "title": "Senior Java Developer",
+      "company": "Аренадата Софтвер",
+      "salary_from": 350000,
+      "salary_to": null,
+      "currency": "RUR",
+      "description": "Обладаете опытом работы с maven. Имеете опыт <highlighttext>разработки</highlighttext> RESTful Services с использованием JSON. Обладаете опытом работы с PostgreSQL.  Разрабатывать масштабируемые и отказоустойчивые сервисы в тесном сотрудничестве с другими командами. Разрабатывать и курировать наиболее критичные части приложения. ",
+      "skills": [
+        "SQL"
+      ],
+      "id": "130171492"
+    },
+    {
+      "title": "Senior C Developer (Greengage)",
+      "company": "Аренадата Софтвер",
+      "salary_from": 350000,
+      "salary_to": null,
+      "currency": "RUR",
+      "description": "Имеете опыт коммерческой <highlighttext>разработки</highlighttext> системного ПО на языке С от 4 лет. Обладаете опытом коммерческой <highlighttext>разработки</highlighttext> на уровне ядра СУБД.  Участвовать в <highlighttext>разработке</highlighttext> новой функциональности MPP СУБД Greengage greengagedb.org/en/home/index.html на базе Greenplum (аналитический распределенный вариант Postgres), решать...",
+      "skills": [],
+      "id": "130655706"
+    },
+    {
+      "title": "Разработчик C++ (можно из-за границы)",
+      "company": "Amex Development",
+      "salary_from": 350000,
+      "salary_to": null,
+      "currency": "RUR",
+      "description": "Экспертиза в Linux/Unix: опыт системного программирования и <highlighttext>разработки</highlighttext> приложений. Владение протоколами L2/L3: BGP, OSPF/IGP, LACP... Проектирование и <highlighttext>разработка</highlighttext> собственных сетевых демонов и системных служб. Реализация сетевых стандартов согласно спецификациям RFC и IEEE. Программирование под Linux...",
+      "skills": [],
+      "id": "130898419"
+    }
+  ],
+  [
+    {
+      "title": "Senior Python Developer",
+      "company": "Деньги Вперед",
+      "salary_from": 350000,
+      "salary_to": 450000,
+      "currency": "RUR",
+      "description": "Отличное знание Python и опыт коммерческой-<highlighttext>разработки</highlighttext>. - Знание JavaScript(TypeScript) + React Знание верстки HTML, CSS, Flexbox, Grid, Sass/SCSS... Взаимодействие с командами <highlighttext>разработки</highlighttext>, QA, DevOps и технической поддержки. - Участие в планировании, оценке задач, внедрении инструментов и улучшении процессов <highlighttext>разработки</highlighttext>.",
+      "skills": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "TypeScript",
+        "React"
+      ],
+      "id": "130475346"
+    },
+    {
+      "title": "Senior Java developer (JVM)",
+      "company": "Hi, Rockits!",
+      "salary_from": 4500,
+      "salary_to": null,
+      "currency": "USD",
+      "description": "Наличие 4–5 лет коммерческой <highlighttext>разработки</highlighttext> на Java, глубокого понимания JVM, многопоточности и работы с памятью. Опыт проектирования и поддержки... Разрабатывать и поддерживать микросервисы для обработки ордеров, взаимодействия с внешними биржами и платёжными шлюзами. Работать с высоконагруженными JVM-приложениями: обеспечивать...",
+      "skills": [
+        "Java"
+      ],
+      "id": "130760574"
+    },
+    {
+      "title": "Разработчик GO (Senior)",
+      "company": "Серверные Технологии",
+      "salary_from": 4000,
+      "salary_to": 6000,
+      "currency": "USD",
+      "description": "Опыт работы в Linux и Docker средах. - Проверенный опыт <highlighttext>разработки</highlighttext> высоконагруженных серверных приложений. - Практический опыт работы с AMQP для обмена... Сотрудничать с командой для планирования задач и <highlighttext>разработки</highlighttext> инновационных решений. - Проектировать и внедрять API. - Проводить код-ревью для обеспечения лучших...",
+      "skills": [
+        "Docker"
+      ],
+      "id": "130759479"
+    },
+    {
+      "title": "Senior Go-разработчик",
+      "company": "Группа компаний Экзон",
+      "salary_from": 350000,
+      "salary_to": 400000,
+      "currency": "RUR",
+      "description": "Знание типовых подходов и протоколов взаимодействия сервисов, например REST, gRPC. Опыт <highlighttext>разработки</highlighttext> многопоточных систем, понимание проблем синхронизации и механизмов их... Проектирование архитектуры и <highlighttext>разработка</highlighttext> сложных высоконагруженных микросервисных решений на Go с использованием Kafka. Участие в развитии архитектуры системы. ",
+      "skills": [],
+      "id": "130511945"
+    },
+    {
+      "title": "Senior Data Engineer (Python)",
+      "company": "ArtVolkov.ru",
+      "salary_from": 350000,
+      "salary_to": 380000,
+      "currency": "RUR",
+      "description": "Технологии и требования. 3+ года опыта <highlighttext>разработки</highlighttext> на Python (FinTech / hedge fund / data-heavy среда — большой плюс).  Только Python, пайплайны, архитектура и надёжная инфраструктура данных. Зона ответственности. <highlighttext>Разработка</highlighttext> и поддержка сервисов для сбора данных (data feeders). ",
+      "skills": [
+        "Python"
+      ],
+      "id": "130764448"
+    },
+    {
+      "title": "Разработчик Java Backend-приложений платёжного контура GUI (в банк)",
+      "company": "Сателл ИТ",
+      "salary_from": 300000,
+      "salary_to": 430000,
+      "currency": "RUR",
+      "description": "Знание инфраструктуры <highlighttext>разработки</highlighttext> (Confluence, Jira, Git, Maven, Jenkins, BitBucket, Docker). Опыт <highlighttext>разработки</highlighttext> Unit-тестов от 3-х лет. Опыт <highlighttext>разработки</highlighttext>... <highlighttext>Разработка</highlighttext> и поддержка Backend-приложений платёжного контура. <highlighttext>Разработка</highlighttext> RestApi для GUI приложений. Оптимизация SQL запросов. <highlighttext>Разработка</highlighttext> Unit-тестов тестов. ",
+      "skills": [
+        "Docker",
+        "Git"
+      ],
+      "id": "130782740"
+    },
+    {
+      "title": "Fullstack-разработчик",
+      "company": "Асылгареева Алина Айдаровна",
+      "salary_from": 4000,
+      "salary_to": null,
+      "currency": "USD",
+      "description": "Будет плюсом: Опыт в сфере AdTech. Опыт <highlighttext>разработки</highlighttext> высоконагруженных приложений на Go. Участие в <highlighttext>разработке</highlighttext> DMP (Data Management Platform).  Remoby — международная рекламная платформа (DSP) в сегменте Popunder Ads. Понимает важность тестирования и применяет его в работе. Разрабатывать и поддерживать...",
+      "skills": [
+        "Go"
+      ],
+      "id": "130541038"
+    },
+    {
+      "title": "Senior Fullstack Developer (B2C / Telegram / AI)",
+      "company": "Сенченко Наталья Геннадьевна",
+      "salary_from": 300000,
+      "salary_to": 450000,
+      "currency": "RUR",
+      "description": "Базовый DevOps для самостоятельного деплоя. 6+ лет коммерческой <highlighttext>разработки</highlighttext>. Опыт самостоятельного запуска B2C-продуктов. Умение проектировать системы... Проектировал архитектуру. Поднимал backend. Делал фронтенд. Выкатывал в прод. Смотрел на метрики и дорабатывал продукт. Запускать новые продукты полного цикла...",
+      "skills": [],
+      "id": "130541666"
+    }
+  ],
+  [
+    {
+      "title": "Senior C++ Developer (Cеньор C++ Разработчик)",
+      "company": "QuickChainSystems",
+      "salary_from": 4000,
+      "salary_to": 5000,
+      "currency": "USD",
+      "description": "Уверенные знания структур данных и алгоритмов. Отличное знание Qt5/Qt6, C++17. Опыт сетевого и многопоточного программирования.  Работа по расширению функционала DEX на основе технологии atomicswaps. <highlighttext>Разработка</highlighttext> инновационных торговых протоколов и децентрализованных сделок. <highlighttext>Разработка</highlighttext> криптографических решений для...",
+      "skills": [
+        "C++"
+      ],
+      "id": "130378404"
+    },
+    {
+      "title": "Python-разработчик",
+      "company": "Акцент",
+      "salary_from": 300000,
+      "salary_to": 400000,
+      "currency": "RUR",
+      "description": "Опыт коммерческой <highlighttext>разработки</highlighttext> на Python от 6 лет, с акцентом на backendразработку. Глубокие знания асинхронного программирования (asyncio, aiohttp) и фреймворков... С чем предстоит работать: PostgreSQL + SQLAlchemy — схемы, индексы, миграции, оптимизация запросов. Kafka (aiokafka) — асинхронные продюсеры и консьюмеры, event-driven...",
+      "skills": [
+        "Python",
+        "AI"
+      ],
+      "id": "129653426"
+    },
+    {
+      "title": "Ведущий разработчик С/С++",
+      "company": "ProfiStaff",
+      "salary_from": 300000,
+      "salary_to": 400000,
+      "currency": "RUR",
+      "description": "Опыт работы с системой контроля и учета версий (Git, SVN и др.). Опыт <highlighttext>разработки</highlighttext> в сфере безопасности (СКУД, ИСБ), как... <highlighttext>Разработка</highlighttext> аппаратных платформ. <highlighttext>Разработка</highlighttext> программного обеспечения для встраиваемых систем на основе Embedded Linux, Android. <highlighttext>Разработка</highlighttext> ПО для микроконтроллеров STM.Artery. ",
+      "skills": [
+        "Git"
+      ],
+      "id": "119907780"
+    },
+    {
+      "title": "Системный программист (Linux-like systems, kernel)",
+      "company": "UserGate",
+      "salary_from": 300000,
+      "salary_to": null,
+      "currency": "RUR",
+      "description": "Опыт работы с одной из платформ ARM, MIPS. Опыт reverse <highlighttext>engineering</highlighttext>. Опыт <highlighttext>разработки</highlighttext> на С++. Опыт написания модулей ядра ОС... <highlighttext>Разработка</highlighttext> ядра операционной системы (Linux-like), системного ПО для систем сетевой безопасности. Исследование и выбор технологий, отладка и поддержка существующего...",
+      "skills": [],
+      "id": "90599147"
+    },
+    {
+      "title": "Фронтенд и бэкенд разработчик",
+      "company": "АЛАР",
+      "salary_from": 300000,
+      "salary_to": 400000,
+      "currency": "RUR",
+      "description": "Опыт работы во фронтенд- и бэкенд-<highlighttext>разработке</highlighttext> от 6 лет. Отличное знание современных JavaScript/TypeScript-фреймворков (React, Vue или аналогичных).  <highlighttext>Разработка</highlighttext> и поддержка фронтенд- и бэкенд-частей современного мессенджера с элементами ИИ. Проектирование архитектуры, интеграция с внешними сервисами и API. ",
+      "skills": [
+        "Java",
+        "JavaScript",
+        "TypeScript",
+        "React"
+      ],
+      "id": "130143835"
+    },
+    {
+      "title": "Senior/TechLead Ruby (backend) разработчик",
+      "company": "Wanted",
+      "salary_from": 4000,
+      "salary_to": null,
+      "currency": "USD",
+      "description": "Опыт коммерческой <highlighttext>разработки</highlighttext> на Ruby on Rails. Быть на связи с 11 до 17 МСК. Место проживания любое, +- 3... <highlighttext>Разработкой</highlighttext> высоконагруженного бэкенда, обрабатывающего финансовые транзакции в режиме реального времени.",
+      "skills": [
+        "AI"
+      ],
+      "id": "130823907"
+    },
+    {
+      "title": "Backend-разработчик Senior",
+      "company": "Рубиру",
+      "salary_from": 4000,
+      "salary_to": null,
+      "currency": "USD",
+      "description": "Инфра: Docker, Docker Compose; Gitlab. Kubernetes. Обязательно:  4+ лет коммерческой <highlighttext>разработки</highlighttext>, 2+ года в роли Senior BackEnd.  Текущий стек.  Frontend: Nextjs, Vue. <highlighttext>Разработка</highlighttext> и развитие микросервисов ( 30 сервисов). Проектирование API и сервисных контрактов. Работа с транзакционной логикой. ",
+      "skills": [
+        "Docker",
+        "Kubernetes",
+        "Git"
+      ],
+      "id": "130503160"
+    },
+    {
+      "title": "Senior Back-end Developer",
+      "company": "Харанутов Антон Евгеньевич",
+      "salary_from": 4000,
+      "salary_to": null,
+      "currency": "USD",
+      "description": " Работает в Jira/Confluence без напоминаний. - Понимает, что бэкенд-логика — на бэкенде (состояние в БД, валидация — у нас). - ",
+      "skills": [],
+      "id": "130176823"
+    },
+    {
+      "title": "Senior Backend Developer (Node.js / TypeScript)",
+      "company": "Харанутов Антон Евгеньевич",
+      "salary_from": 4000,
+      "salary_to": null,
+      "currency": "USD",
+      "description": "...в iGaming или других highload-проектах. - Понимание принципов работы распределённых систем. - Опыт работы в роли единственного backend-<highlighttext>разработчика</highlighttext> на проекте. Jira/Confluence: ведение задач, работа с документацией. - Docker: базовое использование для локальной <highlighttext>разработки</highlighttext>. - Чёткое разделение ответственности: состояние и бизнес-логика...",
+      "skills": [],
+      "id": "130176833"
+    },
+    {
+      "title": "Старший разработчик Node.js",
+      "company": "Peaky Hunters",
+      "salary_from": 4000,
+      "salary_to": null,
+      "currency": "USD",
+      "description": "Обязательный опыт работы в iGaming от 2х лет. Опыт коммерческой <highlighttext>разработки</highlighttext> на Node.js от 6 лет. Опыт работы с... Проектированием архитектуры и <highlighttext>разработкой</highlighttext> highload платформы. Проектированием, настройкой и оптимизацией баз данных. Настройкой и поддержкой CI/CD процессов. ",
+      "skills": [
+        "Node.js"
+      ],
+      "id": "130917995"
+    }
+  ],
+  [
+    {
+      "title": "Программист ORACLE",
+      "company": "МАКС-М",
+      "salary_from": 300000,
+      "salary_to": null,
+      "currency": "RUR",
+      "description": "Опыт работы с СУБД Oracle PL/SQL в роли <highlighttext>разработчика</highlighttext> от 5 лет. Опыт решения задач по проектированию баз данных.  <highlighttext>Разработка</highlighttext> программных модулей по требованиям внутреннего заказчика. Анализ кода и SQL-запросов для увеличения производительности. Помощь в решении инцидентов в...",
+      "skills": [
+        "SQL"
+      ],
+      "id": "129297389"
+    },
+    {
+      "title": "Middle backend developer",
+      "company": "SHiFT AM",
+      "salary_from": 300000,
+      "salary_to": null,
+      "currency": "RUR",
+      "description": "Cтэк: Python, golang / redis / PostgreSQL / web3. Понимание технологии блокчейн и evm-compatible сетей будет плюсом. Участвовать в развитии партнерских проектов и интеграциях (банки, платежные системы и пр.). Интеграция с evm-compatible блокчейнами. Развивать dApp shiftdefii.com...",
+      "skills": [
+        "Python",
+        "Go",
+        "SQL"
+      ],
+      "id": "129346667"
+    },
+    {
+      "title": "Ведущий системный программист C/C++ QNX",
+      "company": "НПО ПКРВ",
+      "salary_from": 300000,
+      "salary_to": null,
+      "currency": "RUR",
+      "description": "Опыт <highlighttext>разработки</highlighttext> на С или С++ ПО под POSIX-совместимые системы (QNX, Linux) от 5-ти лет. Опыт <highlighttext>разработки</highlighttext> многопоточных... Отладка и тестирование встраиваемого программного обеспечения. Участие в <highlighttext>разработке</highlighttext> испытательных стендов и методик испытаний. Помощь техническим писателям в подготовки документации...",
+      "skills": [],
+      "id": "130088784"
+    },
+    {
+      "title": "Senior Golang разработчик",
+      "company": "Веро Трейс",
+      "salary_from": 300000,
+      "salary_to": null,
+      "currency": "RUR",
+      "description": "Опыт 3–5+ лет коммерческой <highlighttext>разработки</highlighttext> на Go. - Уверенное понимание конкурентности в Go (goroutines, channels, context). - Опыт работы с... <highlighttext>Разработка</highlighttext> и развитие backend-сервисов на Go в микросервисной архитектуре. - Проектирование API (gRPC, REST) и внутренних контрактов между сервисами. - ",
+      "skills": [
+        "Go"
+      ],
+      "id": "130320091"
+    },
+    {
+      "title": "Java-разработчик",
+      "company": "Кобелева Ольга Михайловна",
+      "salary_from": 300000,
+      "salary_to": null,
+      "currency": "RUR",
+      "description": "Опыт коммерческой <highlighttext>разработки</highlighttext> на Java от 3 лет. Отличное знание Java Core, понимание принципов ООП. Опыт работы с современными фреймворками... <highlighttext>Разработка</highlighttext> и поддержка backend-части интернет-магазина на Java. Проектирование и внедрение новых модулей и сервисов. Интеграция с внешними системами...",
+      "skills": [
+        "Java"
+      ],
+      "id": "130335571"
+    },
+    {
+      "title": "Senior Backend разработчик (Golang+Python)",
+      "company": "Стрит Фалькон",
+      "salary_from": 300000,
+      "salary_to": null,
+      "currency": "RUR",
+      "description": "Общий опыт продуктовой backend-<highlighttext>разработки</highlighttext> на с использованием ООП от 4 лет. Опыт проектирования, <highlighttext>разработки</highlighttext> и выкатывания сервисов в production.  ...<highlighttext>разработке</highlighttext> и оптимизации архитектуры. Актуализации системы под обновляющиеся требования. Проектирование и <highlighttext>разработка</highlighttext> сервисов с доставкой до production. Опыт продуктовой <highlighttext>разработки</highlighttext>...",
+      "skills": [],
+      "id": "130345046"
+    },
+    {
+      "title": "Senior+ Backend-разработчик (Node.js, Fastify, tRPC, Prisma, PostgreSQL)",
+      "company": "Холдинг Финанс",
+      "salary_from": 300000,
+      "salary_to": null,
+      "currency": "RUR",
+      "description": "3+ лет коммерческой <highlighttext>разработки</highlighttext> на Node.js и TypeScript (strict mode). ️Опыт с одним из веб‑фреймворков (Fastify/Express/Koa... Валидация: Zod. ️Тесты: Vitest, Testcontainers, (Stryker — мутационное тестирование). ️Задачи. ️Проектировать и разрабатывать доменные модули и tRPC‑процедуры. ️Моделировать данные и...",
+      "skills": [
+        "TypeScript",
+        "Node.js"
+      ],
+      "id": "130513509"
+    },
+    {
+      "title": "Старший Python-разработчик",
+      "company": "МФК Фордевинд",
+      "salary_from": 300000,
+      "salary_to": null,
+      "currency": "RUR",
+      "description": "Опыт коммерческой <highlighttext>разработки</highlighttext> от 5 лет. Умение работать с системой контроля версий Git. Хорошее владение Python: умение писать чистый читаемый... Тестирование и отладка разработанного кода, ведение документации. Помощь в <highlighttext>разработке</highlighttext> backend-а микросервисных web-приложений. Участие в принятии технических решений...",
+      "skills": [
+        "Python",
+        "Git"
+      ],
+      "id": "130584869"
+    }
+  ],
+  [
+    {
+      "title": "Senior Backend Developer",
+      "company": "Думатель",
+      "salary_from": 300000,
+      "salary_to": null,
+      "currency": "RUR",
+      "description": "Будет плюсом. Опыт технического лидерства или роли ведущего <highlighttext>разработчика</highlighttext>. Опыт масштабирования командных процессов <highlighttext>разработки</highlighttext>. Работа с очередями / event-driven архитектурой.  Зона ответственности. Проектирование и развитие backend-архитектуры продукта. <highlighttext>Разработка</highlighttext> масштабируемых и отказоустойчивых сервисов. Проработка API и внутренних сервисных контрактов. ",
+      "skills": [],
+      "id": "130705198"
+    },
+    {
+      "title": "Java/Kotlin разработчик",
+      "company": "GreenCore",
+      "salary_from": 320000,
+      "salary_to": 370000,
+      "currency": "RUR",
+      "description": "Опыт работы с очередями сообщений (JMS, AMQP, Kafka). Опыт использования DevOps практик при <highlighttext>разработке</highlighttext> информационных систем. Опыт <highlighttext>разработки</highlighttext> высоконагруженных веб... Проектирование и <highlighttext>разработка</highlighttext> новых модулей системы на Java/Kotlin с использованием фреймворков Spring/Spring Boot. <highlighttext>Разработка</highlighttext> API-интерфейсов RESTful сервисов...",
+      "skills": [],
+      "id": "130878459"
+    },
+    {
+      "title": "Python-разработчик",
+      "company": "Amex Development",
+      "salary_from": 300000,
+      "salary_to": null,
+      "currency": "RUR",
+      "description": "Опыт работы <highlighttext>разработчиком</highlighttext> на Python - не менее 5 лет. * Уверенное владение Python и PyTest (написание тестов, работа с плагинами). *  Оптимизация существующих тестов и инфраструктуры тестирования. * Участие в <highlighttext>разработке</highlighttext> сценариев тестирования для новых функций оборудования. * Документирование разработанных решений и тестов...",
+      "skills": [
+        "Python"
+      ],
+      "id": "130899293"
+    },
+    {
+      "title": "Backend-разработчик (Go)",
+      "company": "Playoff Games",
+      "salary_from": 3500,
+      "salary_to": 5000,
+      "currency": "USD",
+      "description": "Не просто как buzz-word, а как рабочий инструмент — автоматизация, ускорение <highlighttext>разработки</highlighttext>, повышение качества, идеи, как сделать систему умнее и... не ждёт, пока ему скажут, что делать. — думает про продукт, риски и архитектуру целиком. Формально это не tech lead. ",
+      "skills": [],
+      "id": "130650740"
+    },
+    {
+      "title": "Senior Python разработчик (офис)",
+      "company": "Selecty",
+      "salary_from": 300000,
+      "salary_to": 370000,
+      "currency": "RUR",
+      "description": "Опыт коммерческой <highlighttext>разработки</highlighttext> на Python от 6-ти лет. Глубокое знание FastAPI, SQLAlchemy, Pydantic, Alembic. Опыт проектирование архитектуры.  <highlighttext>Разработка</highlighttext> высоконагруженных веб-сервисов и REST API на FastAPI. Проектирование архитектуры баз данных (Postgres, Redis) и работа SQLAlchemy, Alembic. ",
+      "skills": [
+        "Python",
+        "SQL"
+      ],
+      "id": "130456194"
+    },
+    {
+      "title": "Python-разработчик",
+      "company": "Снэп АйТи",
+      "salary_from": 300000,
+      "salary_to": 350000,
+      "currency": "RUR",
+      "description": "Опыт коммерческой <highlighttext>разработки</highlighttext> на Python от 4-5 лет. Опыт работы в краулинговых системах. Хорошее знание одного из фреймворка FastAPI... Разрабатывать кастомные краулинговые сервисы разного вида web-контента. Проектировать и реализовывать REST/gRPC API для внутренних клиентов. Интегрировать с различными...",
+      "skills": [
+        "Python"
+      ],
+      "id": "129701567"
+    },
+    {
+      "title": "Разработчик платформы GenAI (Middle Backend Engineer)",
+      "company": "Первый Бит",
+      "salary_from": 300000,
+      "salary_to": 350000,
+      "currency": "RUR",
+      "description": "4+ лет коммерческой <highlighttext>разработки</highlighttext> на Python, 2+ года с FastAPI и asyncio. Уверенное владение Pydantic, SQLAlchemy.  Бэкенд и архитектура: Участие в выборе технологического стека и проектировании масштабируемой серверной архитектуры (сервисы, слои, границы контекстов). Проектирование и реализация...",
+      "skills": [
+        "Python",
+        "SQL"
+      ],
+      "id": "129619536"
+    },
+    {
+      "title": "Senior Python Developer (ОФИС)",
+      "company": "Selecty",
+      "salary_from": 300000,
+      "salary_to": 350000,
+      "currency": "RUR",
+      "description": "Мы создаем команду в едином рабочем пространстве для максимально эффективной коммуникации, совместного проектирования архитектуры и быстрого обмена знаниями.  Обязанности. - <highlighttext>Разработка</highlighttext> сервисов микросервисной архитектуры приложения. - <highlighttext>Разработка</highlighttext> нового функционала и доработка существующего под бизнес-нужны. - Проектирование архитектуры БД и приложения. - ",
+      "skills": [],
+      "id": "129458490"
+    }
+  ],
+  [
+    {
+      "title": "Data Engineer (DWH и ETL)",
+      "company": "Saltwort",
+      "salary_from": 300000,
+      "salary_to": 350000,
+      "currency": "RUR",
+      "description": "Опыт работы <highlighttext>разработчиком</highlighttext> ETL от 2х лет обязателен. Продвинутый уровень SQL, опыт оптимизации sql-запросов. Опыт <highlighttext>разработки</highlighttext> в GreenPlum... Проект: <highlighttext>разработка</highlighttext> центрального хранилища данных в банке (DWH).",
+      "skills": [
+        "SQL"
+      ],
+      "id": "130141358"
+    },
+    {
+      "title": "Ведущий программист (Embedded на ARM 64)",
+      "company": "Heaad",
+      "salary_from": 300000,
+      "salary_to": 350000,
+      "currency": "RUR",
+      "description": "Высшее техническое образование. Опыт от 5 лет в embedded-<highlighttext>разработке</highlighttext>. Отличное знание C, C++. Опыт работы с GCC, GDB, CMake... Участие в проектировании электрических схем и распределении ресурсов микроконтроллеров. <highlighttext>Разработка</highlighttext> нового и рефакторинг существующего ПО. Проведение отладки, первичного тестирования и...",
+      "skills": [
+        "C++"
+      ],
+      "id": "130659724"
+    },
+    {
+      "title": "Senior Delphi 7 программист (Legacy, MS SQL)",
+      "company": "Кадровое агентство Алексея Сухорукова",
+      "salary_from": 3500,
+      "salary_to": 4500,
+      "currency": "USD",
+      "description": "Коммерческий опыт с Delphi 7 на уровне Senior+: зрелый <highlighttext>разработчик</highlighttext>, уверенно работающий с большим легаси с минимумом документации.  Работа с системным аналитиком: уточнение требований, реализация по спецификациям. <highlighttext>Разработка</highlighttext> на Delphi 7: UI/формы, бизнес-логика, интеграции, печатные формы...",
+      "skills": [],
+      "id": "130981363"
+    },
+    {
+      "title": "Middle Rust Developer",
+      "company": "VELES.FINANCE",
+      "salary_from": 3000,
+      "salary_to": 5000,
+      "currency": "USD",
+      "description": "...опыта <highlighttext>разработки</highlighttext> на Rust / C++. Опыт работы с PostgreSQL, Clickhouse, Redis, Kafka. Понимание основных алгоритмов и структур данных. Опыт <highlighttext>разработки</highlighttext>... <highlighttext>Разработка</highlighttext> высоконагруженных систем для автоматизированной торговли на криптовалютных биржах. Участие в проектировании архитектуры и реализации новых функциональных возможностей. ",
+      "skills": [
+        "C++",
+        "Rust",
+        "SQL"
+      ],
+      "id": "130824609"
+    },
+    {
+      "title": "Backend Developer — Go / PostgreSQL",
+      "company": "Рыбаков Артем Владимирович",
+      "salary_from": 3000,
+      "salary_to": 5000,
+      "currency": "USD",
+      "description": "4+ лет опыта в backend-<highlighttext>разработке</highlighttext>, из них 2+ на Go. Глубокое понимание PostgreSQL: транзакции, индексы, explain analyze.  Проектирование и <highlighttext>разработка</highlighttext> backend-сервисов на Go. Работа с PostgreSQL: схема БД, индексы, оптимизация запросов. <highlighttext>Разработка</highlighttext> REST API, интеграция с...",
+      "skills": [
+        "Go",
+        "SQL",
+        "AI"
+      ],
+      "id": "130806901"
+    },
+    {
+      "title": "Python разработчик",
+      "company": "Сережкин Константин Сергеевич",
+      "salary_from": 300000,
+      "salary_to": 300000,
+      "currency": "RUR",
+      "description": "Опыт коммерческой <highlighttext>разработки</highlighttext> на Python от 3 лет. Отличное знание Django и/или FastAPI. Уверенное владение PostgreSQL, опыт работы с... <highlighttext>Разработка</highlighttext> и поддержка высоконагруженных backend-сервисов на Python (Django, FastAPI). Проектирование и реализация микросервисной архитектуры. Интеграция с PostgreSQL, RabbitMQ, Kafka...",
+      "skills": [
+        "Python",
+        "Go",
+        "Django",
+        "SQL"
+      ],
+      "id": "130352022"
+    },
+    {
+      "title": "Backend Developer (Node.js/NestJS + PostgreSQL/Prisma)",
+      "company": "Head Start Career Development Center",
+      "salary_from": 3000,
+      "salary_to": 4000,
+      "currency": "USD",
+      "description": "Сильный опыт backend-<highlighttext>разработки</highlighttext> на Node.js (NestJS, Express). Умение проектировать архитектуру серверных приложений (REST / GraphQL, микросервисы, кеширование, message brokers).  Использование AI-IDE и ассистентов (Cursor, Claude Code) для ускорения <highlighttext>разработки</highlighttext> с контролем качества результата. В идеале — понимание context <highlighttext>engineering</highlighttext>...",
+      "skills": [
+        "Node.js"
+      ],
+      "id": "130881060"
+    },
+    {
+      "title": "Senior Backend Developer",
+      "company": "Go Offer",
+      "salary_from": 3000,
+      "salary_to": 4000,
+      "currency": "USD",
+      "description": "5 лет опыта backend-<highlighttext>разработки</highlighttext>. Хорошая мат. часть (базовые алгоритмы, System Design, как работает Web и HTTP, устройство DB, асинхронность).  AI-агенты для автоподач на job-бордах (Linkedin, Greenhouse, Workday, e.t.c). AI-агенты для переписки в чате, поддержки...",
+      "skills": [],
+      "id": "130567286"
+    }
+  ],
+  [
+    {
+      "title": "Founding Backend Engineer",
+      "company": "Geeks",
+      "salary_from": 3000,
+      "salary_to": null,
+      "currency": "USD",
+      "description": "Сильные навыки использования AI-инструментов для ускорения <highlighttext>разработки</highlighttext> (LLM ассистенты, автогенерация тестов, рефакторинг) при сохранении качества. DevOps-lite / Platform: CI... Спроектировать и реализовать backend-архитектуру продукта: доменная модель, multi-tenant, RBAC, audit log. Построить WhatsApp API интеграцию: webhooks, templates, delivery...",
+      "skills": [
+        "AI"
+      ],
+      "id": "130598193"
+    },
+    {
+      "title": "Senior Python developer",
+      "company": "Кадровое агентство Алексея Сухорукова",
+      "salary_from": 3000,
+      "salary_to": 3500,
+      "currency": "USD",
+      "description": "Опыт коммерческой <highlighttext>разработки</highlighttext> от 5 лет с Python, FastAPI. Уверенное владение базовыми архитектурными паттернами. Знание SQLAlchemy, умение составлять сложные SQL... Вакансия открыта в связи с увеличением объема работ по новым проектам. Создание и поддержка unit и integration тестов с использованием...",
+      "skills": [
+        "Python",
+        "SQL"
+      ],
+      "id": "130456983"
+    },
+    {
+      "title": "Senior .NET Developer (Highload, Fintech)",
+      "company": "IndigoSoft",
+      "salary_from": 3000,
+      "salary_to": 3500,
+      "currency": "USD",
+      "description": "CI/CD: понимаете культуру DevOps и умеете работать с GitLab. Работали в Fintech (MetaTrader 4/5, сTrader, другие торговые платформы... Аrchitecture: проектирование новых модулей, устойчивых к экстремальным нагрузкам. Performance: оптимизация критических участков и борьба с техдолгом (стратегически, а не точечно). ",
+      "skills": [
+        "Git",
+        "CI/CD"
+      ],
+      "id": "130664114"
+    }
+  ]
+]
