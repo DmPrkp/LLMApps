@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "groq-sdk": "^0.37.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.3"
+  }
+}

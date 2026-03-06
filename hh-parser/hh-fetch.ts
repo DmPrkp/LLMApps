@@ -1,6 +1,5 @@
 import { FetchResult, Vacancy } from "./types.js";
 
-
 // Коды профессиональных ролей для IT-специалистов (из справочника hh.ru)
 const IT_ROLES = [
   "96", // Программист
@@ -76,7 +75,7 @@ export async function fetchVacanciesPage(
 
   const response = await fetch(url, {
     headers: {
-      "User-Agent": "SalaryCollector/1.0 (dmprkp@yandex.ru)",
+      "User-Agent": `SalaryCollector/1.0 (${process.env.RU_EMAIL})`,
       Accept: "application/json",
     },
   });

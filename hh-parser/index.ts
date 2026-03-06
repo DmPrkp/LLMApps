@@ -4,29 +4,30 @@ import { CompactVacancy, Salary, Vacancy } from './types.js';
 import { CATEGORIES, categorizeVacancy, fetchVacanciesPage } from './hh-fetch.js';
 import fs from 'fs'
 
+// Пороговые значения зарплат
+const SALARY_THRESHOLD_RUB = 300000;
+const SALARY_THRESHOLD_USD = 3000;
+const PAGES = 10;
+const CHUNK_SIZE = 20;
+
 dotenv.config();
 
 const groq = new Groq({
   apiKey: process.env.GROQ_API_KEY
 });
 
+const MODEL = process.env.GROQ_MODEL || "meta-llama/llama-4-scout-17b-16e-instruct"
 
-
-async function runMinimalPrompt(prompt: string): Promise<string> {
+async function runMinimalPrompt(prompt: string, content: string): Promise<string> {
   try {
     const chatCompletion = await groq.chat.completions.create({
       messages: [{
         role: "system",
-        content: `Ты - анализатор вакансий. Твоя задача - отбирать только вакансии чистых программистов/разработчиков.
-    
-ПРАВИЛА ОТБОРА:
-✅ ОСТАВЛЯЕМ: backend, fullstack, C++, C#, Python, Java, Go, Rust, разработчик, software engineer
-❌ ИСКЛЮЧАЕМ: frontend, QA, тестировщик, devops, менеджер, director, CTO, lead, 1С, администратор
-
-ВАЖНО: Всегда отвечай ТОЛЬКО в формате JSON-массива. Никаких пояснений, только данные.`
+        content
       }, { role: "user", content: prompt }],
-      model: "meta-llama/llama-4-scout-17b-16e-instruct",
+      model: MODEL,
       temperature: 0,
+      max_tokens: 35000
     });
 
     return chatCompletion.choices[0]?.message?.content || '';
@@ -35,12 +36,6 @@ async function runMinimalPrompt(prompt: string): Promise<string> {
     return '';
   }
 }
-
-// Пороговые значения зарплат
-const SALARY_THRESHOLD_RUB = 300000;
-const SALARY_THRESHOLD_USD = 3000;
-const PAGES = 10;
-const CHUNK_SIZE = 20;
 
 function extractSkills(text: string): string[] {
   const commonSkills = [
@@ -66,7 +61,7 @@ function prepareVacanciesForLLM(vacancies: any[]): CompactVacancy[] {
   return vacancies.map(vac => {
     // Извлекаем ключевые навыки из требований
     const requirement = vac.snippet?.requirement || '';
-    const skills = extractSkills(requirement);
+    // const skills = extractSkills(requirement);
 
     return {
       title: vac.name || 'Без названия',
@@ -75,7 +70,7 @@ function prepareVacanciesForLLM(vacancies: any[]): CompactVacancy[] {
       salary_to: vac.salary?.to || null,
       currency: vac.salary?.currency || 'RUR',
       description: (vac.snippet?.requirement || '') + ' ' + (vac.snippet?.responsibility || ''),
-      skills: skills,
+      skills: requirement,
       id: vac.id
     };
   });
@@ -192,7 +187,15 @@ function chunkArray<T>(array: T[], chunkSize: number): T[][] {
 
 function parseModelResponse(response: string): any[] {
   // Убираем markdown-обёртки
-  const cleanResponse = response.replace(/```(?:json)?\s*|\s*```/g, '').trim();
+  let cleanResponse = response.replace(/```(?:json)?\s*|\s*```/g, '').trim();
+
+  cleanResponse = cleanResponse.replace(/<think>[\s\S]*?<\/think>/g, '').trim();
+
+  const firstBracket = cleanResponse.indexOf('[');
+  const lastBracket = cleanResponse.lastIndexOf(']');
+  if (firstBracket !== -1 && lastBracket !== -1 && lastBracket > firstBracket) {
+    cleanResponse = cleanResponse.substring(firstBracket, lastBracket + 1);
+  }
 
   try {
     const parsed = JSON.parse(cleanResponse);
@@ -222,13 +225,29 @@ async function main() {
     console.log(`\n🔄 Часть ${i + 1}/${chunks.length}`);
 
     const prompt = `Из этого списка вакансий выбери ТОЛЬКО те, которые подходят под критерии:
-- Программисты/разработчики (не менеджеры, не тестировщики, не devops, не фронтендеры)
-- Высокая зарплата (относительно других в списке)
-    
-Верни ТОЛЬКО массив с объектами выбранных вакансий:
-${JSON.stringify(chunks[i], null, 2)}`;
+      - Программисты/разработчики (не менеджеры, не тестировщики, не devops, не фронтендеры)
+      - Высокая зарплата (относительно других в списке)
+          
+      Верни ТОЛЬКО массив с объектами выбранных вакансий:
+    ${JSON.stringify(chunks[i], null, 2)}`;
 
-    const result = await runMinimalPrompt(prompt);
+    const content = `Ты - анализатор вакансий. Твоя задача - отбирать только вакансии чистых программистов/разработчиков и devops.
+          ПРАВИЛА ОТБОРА:
+          ✅ ОСТАВЛЯЕМ: backend, fullstack, C++, C#, Python, Java, Go, Rust, разработчик, software engineer, devops, 1С разработчик
+          ❌ ИСКЛЮЧАЕМ: frontend, QA, тестировщик, менеджер, director, CTO, lead, администратор
+
+          ВАЖНО: Твой ответ должен быть ТОЛЬКО валидным JSON-массивом.
+          Не используй никакие пояснения, теги (<think>, \`\`\` и т.д.), вводные фразы.
+          Ответ должен начинаться с символа '[' и заканчиваться ']'.
+          Также максимально сократить описание вакансии и оставить 
+          - коротко описание например геймдев или бэкенд 
+          - специализацию, 
+          - языки 
+          - зарплату
+          - заголовок
+          Никакого дополнительного текста до или после массива.`
+
+    const result = await runMinimalPrompt(prompt, content);
 
     candidates.push(parseModelResponse(result))
 
@@ -245,21 +264,28 @@ ${JSON.stringify(chunks[i], null, 2)}`;
   // Финальный запрос для составления топа
   console.log("\n🤔 Составляю итоговый топ...");
 
-  const finalPrompt = `Проанализируй все эти вакансии программистов 
-и составь ТОП-10 самых высокооплачиваемых:
+  const finalPrompt = `Проанализируй все эти вакансии программистов:
 
-${JSON.stringify(candidates, null, 2)}
+    ${JSON.stringify(candidates, null, 2)}
 
-Формат ответа: сгруппируй по специализациям и языкам, например:
-ERP на 1С - 2 шт
-бэкенд на Go - 5 шт
-бэкенд на Node.js - 3 шт
-геймдев на C++ - 1 шт
+    Формат ответа: сгруппируй по специализациям и языкам, например:
 
-не достаточно просто написать бэкенд нужно указать язык или языки
-не достаточно просто написать разработка нужно из описания понять какая сфера геймдев, embedded или бэкенд`;
+    - Backend на Node.js (включая NestJS) – 2 шт 
+    - .NET‑backend на C# – 2 шт
+    - Backend на Rust / C++ – 1 шт  
+    - Data Engineering на Python / SQL – 1 шт  
+    - C++‑разработка на C++ – 1 шт
+    - Embedded на C / C++ / Linux‑kernel – 1 шт  
+    - Backend FinTech на PHP / Symfony / Python – 1 шт
+    - Backend (не указано) – 1 шт
+      и тд..
 
-  const finalResult = await runMinimalPrompt(finalPrompt);
+    не достаточно просто написать бэкенд нужно указать язык или языки
+    не достаточно просто написать разработка нужно из описания понять какая сфера геймдев, embedded или бэкенд`;
+
+  const content2 = 'Ты советчик и аналитик отвечаешь цифрами и точными данными (не JSON) но человекочитемыми.'
+
+  const finalResult = await runMinimalPrompt(finalPrompt, content2);
 
   console.log("\n" + "=".repeat(50));
   console.log("🏆 ТОП-10 ВЫСОКООПЛАЧИВАЕМЫХ ВАКАНСИЙ:");
