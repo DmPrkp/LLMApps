@@ -58,7 +58,7 @@ export const CATEGORIES: Record<string, string[]> = {
 
 export async function fetchVacanciesPage(
   text: string,
-  area: string = "1",
+  area: string = "113",
   page: number = 0
 ): Promise<FetchResult> {
   const url = new URL("https://api.hh.ru/vacancies");
