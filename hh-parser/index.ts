@@ -111,7 +111,7 @@ export async function collectHighSalaryVacancies(): Promise<Vacancy[]> {
 
     const { items, limitReached: reached } = await fetchVacanciesPage(
       "developer OR программист OR разработчик OR engineer",
-      "1",
+      "113",
       page
     );
 
