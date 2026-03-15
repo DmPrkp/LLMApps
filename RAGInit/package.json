@@ -1,0 +1,22 @@
+{
+  "name": "rag-init",
+  "version": "1.0.0",
+  "description": "RAG chatbot with ChromaDB and OpenAI",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.78.0",
+    "chromadb": "^1.9.2",
+    "chromadb-default-embed": "^2.14.0",
+    "openai": "^6.29.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.0"
+  }
+}
