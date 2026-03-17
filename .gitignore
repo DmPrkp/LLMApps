@@ -138,4 +138,6 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
-./building-llm-applications
+building-llm-applications/
+RAGtest/CilentoTouristInfo/
+RAGtest/Paestum/
