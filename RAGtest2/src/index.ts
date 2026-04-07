@@ -199,28 +199,28 @@ async function runMultiVectorChildChunks() {
 
   // ячейка 44: загрузка
   for (const destinationUrl of ukDestinationUrls) {
-    const htmlDocs = await loadHtmlDocument(destinationUrl); // #A #B
-    const textDocs = htmlToTextDocs(htmlDocs); // #C
+    const htmlDocs = await loadHtmlDocument(destinationUrl);
+    const textDocs = htmlToTextDocs(htmlDocs);
 
-    const coarseChunks = await parentSplitter.splitDocuments(textDocs); // #D
+    const coarseChunks = await parentSplitter.splitDocuments(textDocs);
     const coarseChunkIds = coarseChunks.map(() => uuidv4());
 
     const allGranularChunks: Document[] = [];
 
-    for (let i = 0; i < coarseChunks.length; i++) { // #E
+    for (let i = 0; i < coarseChunks.length; i++) {
       const coarseChunkId = coarseChunkIds[i];
-      const granularChunks = await childSplitter.splitDocuments([coarseChunks[i]]); // #F
+      const granularChunks = await childSplitter.splitDocuments([coarseChunks[i]]);
 
       for (const granularChunk of granularChunks) {
-        granularChunk.metadata[docKey] = coarseChunkId; // #G
+        granularChunk.metadata[docKey] = coarseChunkId;
       }
       allGranularChunks.push(...granularChunks);
     }
 
     console.log(`Загрузка ${destinationUrl}`);
-    await multiVectorRetriever.vectorstore.addDocuments(allGranularChunks); // #H
+    await multiVectorRetriever.vectorstore.addDocuments(allGranularChunks);
     await multiVectorRetriever.docstore.mset(
-      coarseChunkIds.map((id, i) => [id, coarseChunks[i]]) // #I
+      coarseChunkIds.map((id, i) => [id, coarseChunks[i]])
     );
   }
 
