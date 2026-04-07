@@ -1,13 +1,13 @@
 import * as dotenv from "dotenv";
-import { OpenAIEmbeddings } from "@langchain/openai";
+import { HuggingFaceTransformersEmbeddings } from "@langchain/community/embeddings/huggingface_transformers";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
 
 dotenv.config();
 
 export const OPENAI_API_KEY = process.env.OPENAI_API_KEY ?? "";
 
-export const embeddings = new OpenAIEmbeddings({
-  openAIApiKey: OPENAI_API_KEY,
+export const embeddings = new HuggingFaceTransformersEmbeddings({
+  model: "Xenova/all-MiniLM-L6-v2",
 });
 
 // ячейка 24
