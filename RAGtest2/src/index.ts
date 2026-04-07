@@ -174,8 +174,6 @@ async function runParentDocumentRetriever() {
   const childDocsOnly = await childChunksCollection.similaritySearch("Cornwall Ranger");
   console.log(`\nПрямой поиск по дочерним чанкам: ${childDocsOnly.length} чанк(ов)`);
   if (childDocsOnly.length > 0) console.log(childDocsOnly[0]);
-
-  // ячейка 41: ВАЖНО — гранулярный поиск находит чанк, но теряет окружающий контекст
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -486,8 +484,8 @@ async function runMultiVectorExpandedContext() {
 async function main() {
   // await runGranularVsCoarseSingleUrl();
   // await runMultiUrlGranularVsCoarse();
-  await runParentDocumentRetriever();
-  // await runMultiVectorChildChunks();
+  // await runParentDocumentRetriever();
+  await runMultiVectorChildChunks();
   // await runMultiVectorSummaries();
   // await runMultiVectorHypotheticalQuestions();
   // await runMultiVectorExpandedContext();
