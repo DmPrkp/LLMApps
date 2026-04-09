@@ -11,7 +11,7 @@ import { z } from "zod";
 
 import {
   embeddings,
-  OPENAI_API_KEY,
+  GROQ_API_KEY,
   coarseTextSplitter,
   parentSplitter,
   childSplitter,
@@ -258,16 +258,17 @@ async function runMultiVectorSummaries() {
   });
 
   // ячейка 55: LLM
-  const llm = new ChatOpenAI({ // ячейка 55
-    model: "gpt-4o-mini",
-    openAIApiKey: OPENAI_API_KEY,
+  const chatbot = new ChatOpenAI({
+    openAIApiKey: GROQ_API_KEY,
+    modelName: "llama-3.3-70b-versatile",
+    configuration: { baseURL: "https://api.groq.com/openai/v1" },
   });
 
   // ячейка 56: цепочка суммаризации
   const summarizationChain = ChatPromptTemplate.fromTemplate( // #B
     "Кратко изложи следующий документ:\n\n{document}"
   )
-    .pipe(llm) // #A лямбда становится маппингом входных данных в промпт
+    .pipe(chatbot) // #A лямбда становится маппингом входных данных в промпт
     .pipe(new StringOutputParser());
 
   // ячейка 57: загрузка с резюме
@@ -337,9 +338,10 @@ async function runMultiVectorHypotheticalQuestions() {
   });
 
   // ячейка 69: LLM со структурированным выводом
-  const llm = new ChatOpenAI({
-    model: "gpt-4o-mini",
-    openAIApiKey: OPENAI_API_KEY,
+  const chatbot = new ChatOpenAI({
+    openAIApiKey: GROQ_API_KEY,
+    modelName: "llama-3.3-70b-versatile",
+    configuration: { baseURL: "https://api.groq.com/openai/v1" },
   });
 
   // ячейка 68: схема (Pydantic BaseModel → Zod)
@@ -349,7 +351,7 @@ async function runMultiVectorHypotheticalQuestions() {
       .describe("Список гипотетических вопросов для данного текста"),
   });
 
-  const llmWithStructuredOutput = llm.withStructuredOutput( // ячейка 69
+  const llmWithStructuredOutput = chatbot.withStructuredOutput( // ячейка 69
     HypotheticalQuestionsSchema
   );
 
@@ -358,7 +360,7 @@ async function runMultiVectorHypotheticalQuestions() {
     "Сгенерируй список ровно из 4 гипотетических вопросов, на которые мог бы ответить следующий текст:\n\n{document_text}"
   )
     .pipe(llmWithStructuredOutput) // #C
-    .pipe((x: z.infer<typeof HypotheticalQuestionsSchema>) => x.questions); // #D
+    .pipe((x: any) => (x as z.infer<typeof HypotheticalQuestionsSchema>).questions); // #D
 
   // ячейка 71: загрузка с гипотетическими вопросами
   for (const destinationUrl of ukDestinationUrls) {
@@ -396,14 +398,14 @@ async function runMultiVectorHypotheticalQuestions() {
 
   // ячейка 72: извлечение
   const retrievedDocs = await multiVectorRetriever.invoke(
-    "Как добраться из Лондона в Брайтон?"
+    "Как добраться из Лондона в Корнуолл?"
   );
-  console.log(`\nИзвлечено родительских документов: ${retrievedDocs.length}`); // ячейка 73
+  console.log(`Как добраться из Лондона в Корнуолла?\n Извлечено родительских документов: ${retrievedDocs.length}`); // ячейка 73
   console.log(retrievedDocs); // ячейка 74
 
   // ячейки 75–77: прямой поиск по вопросам
   const questionDocsOnly = await hypotheticalQuestionsCollection.similaritySearch(
-    "Как добраться из Лондона в Брайтон?"
+    "Как добраться из Лондона в Корнуолл?"
   );
   console.log(`\nПрямой поиск по вопросам: ${questionDocsOnly.length} документ(ов)`);
   console.log(questionDocsOnly);
@@ -485,7 +487,7 @@ async function main() {
   // await runGranularVsCoarseSingleUrl();
   // await runMultiUrlGranularVsCoarse();
   // await runParentDocumentRetriever();
-  await runMultiVectorChildChunks();
+  // await runMultiVectorChildChunks();
   // await runMultiVectorSummaries();
   // await runMultiVectorHypotheticalQuestions();
   // await runMultiVectorExpandedContext();
