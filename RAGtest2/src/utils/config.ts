@@ -5,6 +5,7 @@ import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
 dotenv.config();
 
 export const OPENAI_API_KEY = process.env.OPENAI_API_KEY ?? "";
+export const GROQ_API_KEY = process.env.GROQ_API_KEY ?? "";
 
 export const embeddings = new HuggingFaceTransformersEmbeddings({
   model: "Xenova/all-MiniLM-L6-v2",
@@ -13,26 +14,26 @@ export const embeddings = new HuggingFaceTransformersEmbeddings({
 // ячейка 24
 export const UK_DESTINATIONS = [
   "Cornwall",
-  "North_Cornwall",
-  "South_Cornwall",
-  "West_Cornwall",
-  "Tintagel",
-  "Bodmin",
-  "Wadebridge",
-  "Penzance",
-  "Newquay",
-  "St_Ives",
-  "Port_Isaac",
-  "Looe",
-  "Polperro",
-  "Porthleven",
-  "East_Sussex",
-  "Brighton",
-  "Battle",
-  "Hastings_(England)",
-  "Rye_(England)",
-  "Seaford",
-  "Ashdown_Forest",
+  // "North_Cornwall",
+  // "South_Cornwall",
+  // "West_Cornwall",
+  // "Tintagel",
+  // "Bodmin",
+  // "Wadebridge",
+  // "Penzance",
+  // "Newquay",
+  // "St_Ives",
+  // "Port_Isaac",
+  // "Looe",
+  // "Polperro",
+  // "Porthleven",
+  // "East_Sussex",
+  // "Brighton",
+  // "Battle",
+  // "Hastings_(England)",
+  // "Rye_(England)",
+  // "Seaford",
+  // "Ashdown_Forest",
 ];
 
 export const WIKIVOYAGE_ROOT_URL = "https://en.wikivoyage.org/wiki";

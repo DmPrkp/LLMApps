@@ -1,0 +1,31 @@
+{
+  "name": "ragtest3",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "ingest": "ts-node src/sections/section1_ingest.ts",
+    "rewriter": "ts-node src/sections/section2_rewriter.ts",
+    "multiquery": "ts-node src/sections/section3_multi_query.ts",
+    "stepback": "ts-node src/sections/section4_step_back.ts",
+    "hyde": "ts-node src/sections/section5_hyde.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@langchain/community": "^0.3.0",
+    "@langchain/core": "^0.3.0",
+    "@langchain/openai": "^0.3.0",
+    "@langchain/textsplitters": "^0.1.0",
+    "cheerio": "^1.0.0",
+    "chromadb": "^1.9.0",
+    "dotenv": "^16.4.0",
+    "html-to-text": "^9.0.0",
+    "langchain": "^0.3.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/html-to-text": "^9.0.0",
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.5.0"
+  }
+}

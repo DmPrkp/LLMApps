@@ -490,7 +490,7 @@ async function main() {
   // await runMultiVectorChildChunks();
   // await runMultiVectorSummaries();
   // await runMultiVectorHypotheticalQuestions();
-  // await runMultiVectorExpandedContext();
+  await runMultiVectorExpandedContext();
 }
 
 main().catch(console.error);
