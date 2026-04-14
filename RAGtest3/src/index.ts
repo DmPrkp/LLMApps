@@ -81,15 +81,28 @@ Revised Chroma DB query:`;
 
   // Cell 15 — test rewriter
   const searchQuery = await rewriterChain.invoke({ user_question: userQuestion });
-  console.log("\nRewritten search query:", searchQuery);
+  console.log("\nRewritten search query:", searchQuery); // leisure activities in Cornwall
 
   // Cell 16 — retrieve with rewritten query
   console.log("\n--- Rewritten query retrieval ---");
-  const revisedResults = await ukGranularCollection.similaritySearch(
-    searchQuery,
-    4
-  );
-  for (const doc of revisedResults) console.log(doc);
+  const retriever = ukGranularCollection.asRetriever();
+  const context = await retriever.invoke(searchQuery);
+
+  // Cell 17 — final RAG answer
+  const ragPromptTemplate = `Given a question and some context, answer the question.
+If you do not know the answer, just say I do not know.
+
+Context: {context}
+Question: {question}`;
+
+  const ragPrompt = ChatPromptTemplate.fromTemplate(ragPromptTemplate);
+
+  const ragAnswer = await ragPrompt
+    .pipe(llm)
+    .pipe(new StringOutputParser())
+    .invoke({ context, question: userQuestion });
+
+  console.log("\nRewrite-Retrieve-Read answer: \n", ragAnswer);
 }
 
 // ─────────────────────────────────────────────────────────────────────────────

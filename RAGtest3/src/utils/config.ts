@@ -1,14 +1,13 @@
 import * as dotenv from "dotenv";
-import { OpenAIEmbeddings } from "@langchain/openai";
+import { HuggingFaceTransformersEmbeddings } from "@langchain/community/embeddings/huggingface_transformers";
 
 dotenv.config();
 
 export const OPENAI_API_KEY = process.env.OPENAI_API_KEY ?? "";
 export const GROQ_API_KEY = process.env.GROQ_API_KEY ?? "";
 
-// Cell 1 — embeddings (original uses OpenAIEmbeddings)
-export const embeddings = new OpenAIEmbeddings({
-  openAIApiKey: OPENAI_API_KEY,
+export const embeddings = new HuggingFaceTransformersEmbeddings({
+  model: "Xenova/all-MiniLM-L6-v2",
 });
 
 // Cell 4 — UK destinations list
