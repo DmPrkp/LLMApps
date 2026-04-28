@@ -90,10 +90,10 @@ Revised Chroma DB query:`;
 
   // Cell 17 — final RAG answer
   const ragPromptTemplate = `Given a question and some context, answer the question.
-If you do not know the answer, just say I do not know.
+    If you do not know the answer, just say I do not know.
 
-Context: {context}
-Question: {question}`;
+    Context: {context}
+    Question: {question}`;
 
   const ragPrompt = ChatPromptTemplate.fromTemplate(ragPromptTemplate);
 
@@ -319,10 +319,10 @@ async function main() {
   // Uncomment to re-ingest data (only needed once or when resetting):
   // await runDataIngestion();
 
-  await runQueryRewriter();
+  // await runQueryRewriter();
   // await runMultiQuery();
   // await runStepBack();
-  // await runHyDE();
+  await runHyDE();
 }
 
 main().catch(console.error);
