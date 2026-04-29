@@ -34,7 +34,6 @@ RAGInit       →   RAGtest1      →   RAGtest2        →   RAGtest3        �
 - **ChromaDB** локально (например, `docker run -p 8000:8000 chromadb/chroma`) — нужен всем проектам кроме голого RAGInit (там тоже нужен).
 - **`GROQ_API_KEY`** в `.env` каждой папки — единственный внешний секрет.
 - **Эмбеддинги** работают локально на CPU через ONNX Runtime — внешние API для них не нужны.
-- Для **RAGtest4** дополнительно нужны SQL-файлы из `building-llm-applications/ch10/` (`CreateUkBooking.sql`, `PopulateUkBooking.sql`).
 
 ## Прочее в репозитории
 

@@ -2,11 +2,8 @@ import * as fs from "fs";
 import * as path from "path";
 import initSqlJs, { Database } from "sql.js";
 
-// Путь к SQL-файлам из главы 10 книги
-const SQL_DIR = path.join(
-  __dirname,
-  "../../../building-llm-applications/ch10"
-);
+// Путь к SQL-файлам внутри проекта
+const SQL_DIR = path.join(__dirname, "../../sql");
 
 // Кэшируем экземпляр sql.js чтобы не загружать WASM дважды
 let _sql: Awaited<ReturnType<typeof initSqlJs>> | null = null;

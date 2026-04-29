@@ -29,6 +29,9 @@ src/
     ├── config.ts                  # эмбеддинги, ключи, маппинг направление→регион
     ├── dbUtils.ts                 # инициализация SQLite, выполнение запросов, очистка SQL
     └── htmlUtils.ts               # загрузка HTML, разбиение по h2, сброс Chroma
+sql/
+├── CreateUkBooking.sql            # схема таблиц UK Booking
+└── PopulateUkBooking.sql          # тестовые данные (отели, предложения)
 ```
 
 ## Что делает каждая секция
@@ -48,10 +51,9 @@ src/
   с `$and` / `$eq`, и только потом выполняется поиск + RAG-ответ.
 
 ### ③ `section3_sql.ts` — text-to-SQL
-Поднимает SQLite в памяти из `building-llm-applications/ch10/CreateUkBooking.sql` +
-`PopulateUkBooking.sql`, отдаёт LLM схему таблиц, генерирует SQL по вопросу
-(«Give me some offers for Cardiff…»), очищает вывод (`cleanSql` срезает markdown и
-преамбулу) и выполняет через `sql.js`.
+Поднимает SQLite в памяти из `sql/CreateUkBooking.sql` + `sql/PopulateUkBooking.sql`,
+отдаёт LLM схему таблиц, генерирует SQL по вопросу («Give me some offers for Cardiff…»),
+очищает вывод (`cleanSql` срезает markdown и преамбулу) и выполняет через `sql.js`.
 
 ### ④ `section4_router.ts` — роутер источников
 LLM решает, куда отправить вопрос:
@@ -91,9 +93,7 @@ npm run router      # ④ роутер
 npm run fusion      # ⑤ RAG fusion
 ```
 
-## Зависимости извне репозитория
+## Внешние зависимости
 
-- `building-llm-applications/ch10/CreateUkBooking.sql`, `PopulateUkBooking.sql` —
-  путь зашит в `src/utils/dbUtils.ts` (`../../../building-llm-applications/ch10`).
 - Запущенный сервер ChromaDB на `localhost`.
 - `GROQ_API_KEY` в `.env`.

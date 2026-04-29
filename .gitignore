@@ -141,3 +141,5 @@ vite.config.ts.timestamp-*
 building-llm-applications/
 RAGtest/CilentoTouristInfo/
 RAGtest/Paestum/
+RAGtest4/sql/*.sql
+!RAGtest4/sql/.gitkeep
