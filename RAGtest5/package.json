@@ -1,0 +1,41 @@
+{
+  "name": "ragtest5",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "section1": "ts-node src/sections/section1_basic_agent.ts",
+    "section2": "ts-node src/sections/section2_multi_tool.ts",
+    "section3": "ts-node src/sections/section3_react_agent.ts",
+    "section4": "ts-node src/sections/section4_accommodation.ts",
+    "section5": "ts-node src/sections/section5_router.ts",
+    "section6": "ts-node src/sections/section6_supervisor.ts",
+    "section7": "ts-node src/sections/section7_mcp.ts",
+    "section8": "ts-node src/sections/section8_checkpointer.ts",
+    "section9": "ts-node src/sections/section9_guardrails.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^3.8.1",
+    "@langchain/community": "^0.3.0",
+    "@langchain/core": "^0.3.0",
+    "@langchain/langgraph": "^0.2.0",
+    "@langchain/langgraph-supervisor": "^0.0.10",
+    "@langchain/openai": "^0.3.0",
+    "@langchain/textsplitters": "^0.1.0",
+    "sql.js": "^1.12.0",
+    "chromadb": "^1.9.0",
+    "dotenv": "^16.4.0",
+    "html-to-text": "^9.0.0",
+    "langchain": "^0.3.0",
+    "uuid": "^10.0.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/sql.js": "^1.4.0",
+    "@types/html-to-text": "^9.0.0",
+    "@types/uuid": "^10.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.5.0"
+  }
+}
